@@ -1,0 +1,55 @@
+h2{
+  text-align: center;
+  color: white;
+  background-color: black;
+}
+.cero {
+  height: 300px;
+  width:300px;
+  background-color: lightblue;
+  display: inline;/* "display:inline" No respeta las proporciones (altura y ancho), no funciona
+                  bien en elementos contenedores, solo en elementos que tienen contendio por
+                  si mismos (imagenes, texto, etc). Permite poner elementos junto a otros */
+}
+
+#uno {
+  height: 300px;
+  width:300px;
+  background-color: purple;
+  display:block; /* "display: Block" Respeta las proporciones (altura y ancho),
+                  pero ocupa todo el ancho con margen */
+}
+
+.dos {
+  height: 300px;
+  width: 300px;
+  background-color: pink;
+  display: inline-block;   /* "display: inline-block" respeta la altura y nos permite poner
+                            elmenetos juntos*/
+}
+div{
+  height: 100px;
+  width:100px;
+  background-color: black;
+}
+
+.tres {
+  height: 300px;
+  width: 300px;
+  background-color: green;
+  display: inline-block;
+  margin: 10px 50px 0 100px; /* margin genera un margen que sale desde el borde de nuestro contenedor
+                              hacia afuera. Se puede poner en todas las direcciones o en una dirección
+                              en específico.
+                              Si se le dan 4 valores funciona asi: arriba izquierda abajo derecha
+                              Si se le dan 2 valores funciona asi: arriba-abajo izquierda-derecha */
+  padding: 40px;              /* padding genera un espacio entre el borde y el contenido de nuestro
+                              contenedor. Se puede poner en todas las direcciones o en una dirección
+                              en específico. */
+}
+#centro {
+  display: block;
+  margin: 0 auto;  /* Se puede centrar un elemento con diplay:block aplicandole:
+                    0 arriba-abajo y auto izquierda-derecha.
+                    auto le da el mismo margen de ambos lados */
+}
